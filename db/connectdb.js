@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 
 
 const  connectDB=()=>{
-    return mongoose.connect(process.env.LOCAL_URL)
+    return mongoose.connect(process.env.LIVE_URL)
 
 
     .then(()=>{

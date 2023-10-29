@@ -5,8 +5,11 @@ dotenv.config({path:'./.env'})
 const web = require('./routes/web')
 const connectdb = require('./db/connectdb')
 const fileupload = require("express-fileupload");
+const cors = require('cors')
 
 
+
+app.use(cors())
 //temp file uploader
 app.use(fileupload({useTempFiles:true}));
 
